@@ -43,10 +43,11 @@ class Ellipse implements Shape {
     	}
     }
 
+    /*
     //Method for another more precise way to Calculate Perimeter
-    //If more accurate calculations are needed, this can be used at the cost of more time complexity
+    //If more accurate calculations are needed, this method can be used at the cost of more time complexity
     static double computeExactPerimeter(double inputRadius1 , double inputRadius2) {	//Best way to get a more precise calculation is up to debate (need to ask senior)
-    	try {
+    	try {	//Place holder code, just a copy of the normal method to compute, Method's logic can be changed as required
     		double h = Math.pow(Math.abs(inputRadius1 - inputRadius2),2)/Math.pow(inputRadius1 + inputRadius2,2);	//Can use integration or infinite series
     		return Math.PI*(inputRadius1 + inputRadius2)*(1.0 + (3*h/(10 + Math.sqrt(4 - 3*h))));
     	} catch (ArithmeticException e) {
@@ -54,6 +55,7 @@ class Ellipse implements Shape {
     		return computePerimeter(Math.abs(inputRadius1), Math.abs(inputRadius2));
     	}
     }
+    */
 
     static double computeArea(double inputRadius1 , double inputRadius2) {
     	return Math.PI*inputRadius1*inputRadius2;
